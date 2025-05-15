@@ -4,11 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jasa Skripsi & Tugas</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papb0qcmxJWZzB24RTzAQeP0B4z6fA+4BvRz6OXE/VXLDgP2JqhD9yO1b+JlH9ykryrC+xFlkSRHxDgXQhLFQg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
-      background: url('334d8bfe-c86b-4aa2-8aa6-dfd7257bb1b9.png') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #333;
       min-height: 100vh;
@@ -44,7 +51,46 @@
       border-radius: 6px;
       font-size: 18px;
       box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation-fill-mode: forwards;
+      animation-name: fadeSlideUp;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
     }
+    /* Buat animasi dengan delay per item pakai nth-child */
+    ul li:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    ul li:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    ul li:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+    ul li:nth-child(4) {
+      animation-delay: 0.7s;
+    }
+    ul li:nth-child(5) {
+      animation-delay: 0.9s;
+    }
+    ul li:nth-child(6) {
+      animation-delay: 1.1s;
+    }
+    ul li:nth-child(7) {
+      animation-delay: 1.3s;
+    }
+    ul li:nth-child(8) {
+      animation-delay: 1.5s;
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     p.contact {
       font-size: 17px;
       text-align: center;
@@ -62,6 +108,7 @@
       text-decoration: underline;
     }
     a.whatsapp-link img {
+      width: 22px;
       height: 22px;
       vertical-align: middle;
     }
@@ -75,7 +122,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Jasa Bimbingan Kilat </h1>
+    <h1>Jasa Bimbingan Kilat</h1>
     <h1>Literasi Ilmiah</h1>
     
     <h2>Daftar Layanan</h2>
@@ -101,7 +148,7 @@
         class="whatsapp-link"
         aria-label="Chat WhatsApp"
       >
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAABUj0zzAAAACXBIWXMAAAsSAAALEgHS3X78AAABgklEQVR4nO2XzUoDQRBE30jS9dH2jZCfwASfwMpPIBNb+AlYqAAsvQMhkWRAM2UFJSd+/CkaVPb5q69mXnm53Zn7Xz19qEcSCQyxdAuu/0qR4xA4f9qGzsgQdkKXJEnqlMZqQNaF3j1NBNQ4YB3XofzIQYagOWRQH2pEHoN0hF7UKSclyNwmc9Tb0ITkjc6I5p0MMqUKzGv4GZ1jeC6p6eHKI7GZn6v5vJJ+RxGCgOb4U1MQjP9h0M7uR/GpCn9vly9iFMC0IDUfuIHZOGCd3g+5mvFl0nFCYkhMX2YTVJrSVk0rZGiVLw78wC3UmcNoay3bRJUeuhBSd4CeVjQ0IE6f+ChqnD44aB57UpmKZlXbS/ps4xHlfKgq7fL9Yi4bNwEOA6xyR9GzV9A87Haq9QX7QzvxWRgwZ6TbsAAAAASUVORK5CYII=" alt="WhatsApp Logo"> +62 897 9424 219
+        <img src="whatsapp.png" alt="WhatsApp Logo" /> +62 897 9424 219
       </a>
     </p>
 
